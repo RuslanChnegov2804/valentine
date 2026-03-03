@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Для моей любимой 💕</title>
+    <title>Анечка с 8 марта 💕</title>
     <style>
         * {
             margin: 0;
@@ -270,42 +270,40 @@
     <div class="floating-hearts" id="hearts"></div>
 
     <div class="container">
-        <!-- Screen 1: Welcome -->
         <div class="screen active" id="screen1">
             <div class="welcome-card">
-                <h1>Привет, любимая 💕</h1>
-                <p class="subtitle">Я сделал это специально для тебя!<br>Пройди мини-игру, чтобы открыть свои сюрпризы</p>
+                <h1>Любимая с 8 марта💕</h1>
+                <p class="subtitle">Я сделал это специально для тебя!<br>Пройди эту мини-игру чтобы понять как перейти к другой мини игре</p>
                 <button class="btn" onclick="nextScreen(2)">Начать игру →</button>
             </div>
         </div>
 
-        <!-- Screen 2: Why I love you -->
         <div class="screen" id="screen2">
             <div class="love-reasons">
-                <h1>Почему я тебя люблю</h1>
-                <p style="color: #888; margin: 20px 0;">Нажми на каждое сердечко, чтобы раскрыть причину</p>
+                <h1>Почему я тебя люблю?</h1>
+                <p style="color: #888; margin: 20px 0;">Нажми на каждое сердечко,чтобы понять причину</p>
                 
                 <div class="reason-item" onclick="revealReason(this)">
                     <span class="reason-heart">💖</span>
                     <div class="reason-text">
                         <div class="reason-title">Твоя преданность</div>
-                        <div class="reason-description">Ты никогда не сдаёшься, даже когда трудно</div>
+                        <div class="reason-description">Ты терпишь мои загоны и остаешься в трудные минуты</div>
                     </div>
                 </div>
 
                 <div class="reason-item" onclick="revealReason(this)">
                     <span class="reason-heart">💖</span>
                     <div class="reason-text">
-                        <div class="reason-title">Твоя нежность</div>
-                        <div class="reason-description">Ты даришь мне любовь каждый день</div>
+                        <div class="reason-title">Твое чувство юмора</div>
+                        <div class="reason-description">Ты шаришь за любую шутку и всегда начнешь ее разгонять вместе со мной</div>
                     </div>
                 </div>
 
                 <div class="reason-item" onclick="revealReason(this)">
                     <span class="reason-heart">💖</span>
                     <div class="reason-text">
-                        <div class="reason-title">Твой юмор</div>
-                        <div class="reason-description">Ты всегда можешь рассмешить меня</div>
+                        <div class="reason-title">Твой ум</div>
+                        <div class="reason-description">Ты самая умная девочка из тех кого я знаю,горжусь тобой</div>
                     </div>
                 </div>
 
@@ -313,7 +311,7 @@
                     <span class="reason-heart">💖</span>
                     <div class="reason-text">
                         <div class="reason-title">Твоя красота</div>
-                        <div class="reason-description">Ты прекрасна во всём</div>
+                        <div class="reason-description">Ты прекрасна в любом виде</div>
                     </div>
                 </div>
 
@@ -321,7 +319,7 @@
                     <span class="reason-heart">💖</span>
                     <div class="reason-text">
                         <div class="reason-title">Твоё сердце</div>
-                        <div class="reason-description">У тебя самое доброе сердце</div>
+                        <div class="reason-description">У тебя самое доброе сердце которое когда либо я встречал</div>
                     </div>
                 </div>
 
@@ -329,7 +327,7 @@
                     <span class="reason-heart">💖</span>
                     <div class="reason-text">
                         <div class="reason-title">Наше будущее</div>
-                        <div class="reason-description">Я хочу провести его с тобой</div>
+                        <div class="reason-description">Я хочу провести его с тобой💖</div>
                     </div>
                 </div>
 
@@ -338,12 +336,11 @@
                 </div>
             </div>
         </div>
-
-        <!-- Screen 3: Memory Game -->
+        
         <div class="screen" id="screen3">
             <div class="game-container">
-                <h1>Давай сыграем перед сюрпризом</h1>
-                <p style="color: #888; margin: 20px 0;">Найди все пары!</p>
+                <h1>Давай сыграем в начальную мини гру</h1>
+                <p style="color: #888; margin: 20px 0;">Попробуй найти все пары!</p>
                 <p class="moves">Ходы: <span id="moves">0</span></p>
                 
                 <div class="game-grid" id="gameGrid"></div>
@@ -353,19 +350,18 @@
                 </p>
                 
                 <button class="btn" id="nextBtn" style="display: none; margin-top: 20px;" onclick="nextScreen(4)">
-                    Получить сюрприз →
+                    Перейти к подсказке →
                 </button>
             </div>
         </div>
 
-        <!-- Screen 4: Final Message -->
         <div class="screen" id="screen4">
             <div class="final-message">
                 <div class="big-heart">❤️</div>
-                <h1>С Днём Святого Валентина!</h1>
+                <h1>Анютка,с 8 марта</h1>
                 <div class="message-text">
-                    Ты — самое лучшее, что случилось в моей жизни. Каждый день рядом с тобой — это настоящее счастье. 
-                    Спасибо за каждое мгновение, за каждую улыбку и за то, что ты просто есть рядом.
+                    Ты самое лучшее, что случилось когда либо в моей жизни.Каждый день рядом с тобой это настоящее счастье. 
+                    Спасибо за каждое мгновение проведенное с тобой и просто ты есть рядом.
                     <br><br>
                     Я тебя очень люблю! 💕
                 </div>
@@ -375,7 +371,6 @@
     </div>
 
     <script>
-        // Create floating hearts
         function createHearts() {
             const container = document.getElementById('hearts');
             const heartSymbols = ['💕', '💖', '💗', '💓', '💝'];
@@ -395,7 +390,6 @@
 
         createHearts();
 
-        // Navigation
         function nextScreen(screenNum) {
             document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
             document.getElementById('screen' + screenNum).classList.add('active');
@@ -406,12 +400,10 @@
             }
         }
 
-        // Reveal reasons
         function revealReason(element) {
             element.classList.add('revealed');
         }
 
-        // Memory Game
         const emojis = ['💕', '🎀', '🧸', '🌹', '💝', '💌'];
         let cards = [];
         let flippedCards = [];
